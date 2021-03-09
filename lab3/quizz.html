@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tomás Maia">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Porto">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <title>Porto</title>
+    </head>
+    <body style="background-color:rgb(212, 182, 182)">
+        <h1>Porto</h1>
+        <img src="images/cabecalho.jpg">
+        <br>
+        <a href="index.html">Introdução |</a>
+        <a href="local.html"> Localização |</a>
+        <a href="multimedia.html"> Multimédia |</a>
+        <a href="info.html"> Informações |</a>
+        <a href="quizz.html"> <b>Quizz</b> |</a>
+        <a href="comentarios.html"> Comentários |</a>
+        <a href="../index.html"> Home</a>
+        <h3>Quizz</h3>
+        <form oninput="valor.value=parseInt(vontade.value)" method="post" action="mailto:offe.games@gmail.com" id="form1">
+            <input type="image" src="images/email.png" alt="submit" width="48" height="48">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>Nome: <input type="text" name="nome" size="10" required autofocus></p>
+                <p>Apelido: <input type="text" name="apelido" size="10" required autofocus></p>
+                <p>Email: <input type="email" name="email" autocomplete="off" autofocus></p>
+            </fieldset>
+            <fieldset>
+                <legend>Quizz</legend>
+                <div><br>
+                    <label for="cidade">Qual o nome da cidade?</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Nome da Cidade" maxlength="12" autofocus>
+                </div>
+                <div>
+                    <p>Quantas freguesias contém a cidade?
+                    <input type="radio" name="freg" id="5">
+                    <label for="5">5</label>
+                    <input type="radio" name="freg" id="6">
+                    <label for="6">6</label>
+                    <input type="radio" name="freg" id="7">
+                    <label for="7">7</label>
+                    </p>
+                </div>
+                <div>
+                    Quais dos seguintes são pontos turisticos da cidade do Porto?
+                    <input type="checkbox" name="Ponte Luis I" id="ponte">
+                    <label for="ponte">Ponte Luis I</label>
+                    <input type="checkbox" name="Padaria Portuguesa" id="padaria">
+                    <label for="padaria">Padaria Portuguesa</label>
+                    <input type="checkbox" name="Estátua D.PedroIV" id="estatua">
+                    <label for="estatua">Estátua D.PedroIV</label>
+                </div>
+                <div><br>
+                    Quando foi criada a Estátua D.PedroIV?
+                    <input type="date" name="date" id="date">
+                </div>
+                <div><br>
+                    Qual a cor do barco na imagem acima representada?
+                    <input type="color" name="cor" value="#000000">
+                </div>
+                <div><br>
+                    Quantos anos tem a atração turistica "Café Majestic"?
+                    <input type="number" name="idade" min="50" max="150" step="10">
+                </div>
+                <div><br>
+                     Quanto gostou ou gostaria de visitar a cidade do Porto de 0 a 100?
+                     <input type="range" name="vontade" min="0" max="100" value="50">
+                     <output name="valor">50</output>
+                </div>
+            </fieldset>
+            <input type="submit" value = "envie email" form="form1">
+            </form>
+            <svg width="300" height="225" style="margin:auto; display:block">
+                <a href="local.html">
+                    <text x="150" y="200" style="font-size: 21px">
+                        Localização
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze"></animateTransform>
+                    </text>
+                </a>
+                <a href="info.html">
+                    <text x="153" y="140" style="font-size: 23px">
+                        Informações
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="7s" fill="freeze"></animateTransform>
+                    </text>
+                </a>
+                <a href="quizz.html">
+                    <text x="43" y="27" style="font-size: 25px;">
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="7s" fill="freeze"></animateTransform>
+                            Quizz
+                    </text>
+                </a>
+                <a href="comentarios.html">
+                    <text x="35" y="190" style="font-size: 22px">
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="6s" fill="freeze"></animateTransform>
+                            Comentários
+                    </text>
+                </a>
+                <a href="../index.html">
+                    <text x="112" y="75" style="font-size: 35px">
+                        Home
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="5s" fill="freeze"></animateTransform>
+                    </text>
+                </a>
+                <a href="multimedia.html">
+                    <text x="150" y="30" style="font-size: 20px">
+                        Multimédia
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="6s" fill="freeze"></animateTransform>
+                    </text>
+                </a>
+                <a href="index.html">
+                    <text x="13" y="120" style="font-size: 25px">
+                        Introdução
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze"></animateTransform>
+                    </text>
+                </a>       
+            </svg>
+    </body>
+</html>
