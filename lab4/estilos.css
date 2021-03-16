@@ -1,0 +1,88 @@
+*{
+    font-family: 'Ranchers', cursive;
+}
+
+header,nav{
+    background-color: white;
+}
+
+main{
+    background-color: rgb(212, 182, 182);
+}
+
+tr:nth-child(2n){
+    background-color: white;
+}
+
+tr:nth-child(2n + 1){
+    background-color: gray;
+}
+
+.float{
+    float: right;
+}
+
+.resize{
+    width: 380px;
+    height: 290px;
+}
+
+.fixed{
+    position: fixed;
+    right: 0;
+    margin-right: 8px;
+}
+  
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+h4{
+    color:red;
+    font-weight: bold;
+}
+
+body h1{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+a[target]{
+    font-style: italic;
+}
+
+a:link{
+    color: blue;
+    font-weight: bold;
+}
+
+a:visited{
+    color:gray;
+    font-weight: bold;
+}
+
+a:hover{
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+
+a:active{
+    font-size: xx-large;
+    color: red;
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-size: xx-large;
+}
+
+p,div{
+    color: greenyellow;
+    font-weight: bold;
+}
