@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tomás Maia">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Porto">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <title>Porto</title>
+    </head>
+    <body style="background-color:rgb(212, 182, 182)">
+        <header>
+            <h1>Porto</h1>
+            <figure>
+                <img src="images/cabecalho.jpg">
+                <figcaption>Uma linda paisagem do Rio Douro</figcaption>
+                <details>
+                    <summary>Informação</summary>
+                    <p>A imagem mostra mais especificamente um barco que se chama rabelo.</p>
+                </details>
+            </figure>
+        </header>
+        <nav>
+            <a href="html5-css.html">HTML5 e CSS |</a>
+            <a href="index.html"> Introdução |</a>
+            <a href="local.html"> Localização |</a>
+            <a href="multimedia.html"> Multimédia |</a>
+            <a href="info.html"> Informações |</a>
+            <a href="quizz.html"> Quizz |</a>
+            <a href="comentarios.html"> <b>Comentários</b> |</a>
+            <a href="../index.html"> Home</a>
+        </nav>
+        <main>
+            <section>
+                <h3>Comentários</h3>
+        <form oninput="rr.value=parseInt(rigor.value)" method="post" action="mailto:offe.games@gmail.com" id="form1">
+            <fieldset>
+                <legend>Opinião sobre o Website</legend>
+                <div>
+                    Avalie de 1 a 5 os seguintes critérios.<br>
+                    1 = Horrivel<br>
+                    5 = Excelente<br>
+                    <label for="claro">Clareza :</label>
+                    <input type="number" name="claro" min="1" max="5" step="1">
+                    <br>
+                    <label for="rigor">Rigor :</label>
+                    <input type="range" name="rigor" min="1" max="5">
+                    <output name="rr">3</output>
+                </div>
+                <div>
+                    Precisão :
+                    <input type="radio" name="precision" id="1">
+                    <label for="1">1</label>
+                    <input type="radio" name="precision" id="2">
+                    <label for="2">2</label>
+                    <input type="radio" name="precision" id="3">
+                    <label for="3">3</label>
+                    <input type="radio" name="precision" id="4">
+                    <label for="4">4</label>
+                    <input type="radio" name="precision" id="5">
+                    <label for="5">5</label>
+                </div>
+                <div>
+                    <p>Este site teve em conta :<br>
+                        <input type="checkbox" name="pronf" id="pronf">
+                        <label for="pronf">Profundidade (contém complexidades e múltiplas inter-relações)</label><br>
+                        <input type="checkbox" name="amplitude" id="amplitude">
+                        <label for="amplitude">Amplitude (que abrange diferentes aspectos, pontos de vista, pespectivas)</label><br>
+                        <input type="checkbox" name="logic" id="logic">
+                        <label for="logic">Lógica (em que as partes fazem sentido num todo, sem contradições: faz sentido no conjunto, provém de evidências)</label><br>
+                        <input type="checkbox" name="signf" id="signf">
+                        <label for="signf">Significância (focado no importante, não trivial)</label><br>
+                        <input type="checkbox" name="origin" id="origin">
+                        <label for="origin">Originalidade (focado no importante, não trivial)</label>
+                        </p>
+                </div>
+                <div>
+                    <textarea name="texto" rows="10" cols="100">Escreva aqui possiveis sugetões de melhoria para o Website</textarea>
+                </div>
+                <input type="hidden" name="hidden" value="lab4">
+                <input type="submit" value = "envie comentário" form="form1">
+            </fieldset>
+        </form>
+            </section>
+            <section>
+                <svg width="300" height="225" style="margin:auto; display:block">
+                    <a href="local.html">
+                        <text x="150" y="200" style="font-size: 21px">
+                            Localização
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze"></animateTransform>
+                        </text>
+                    </a>
+                    <a href="info.html">
+                        <text x="153" y="140" style="font-size: 23px">
+                            Informações
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="7s" fill="freeze"></animateTransform>
+                        </text>
+                    </a>
+                    <a href="quizz.html">
+                        <text x="43" y="27" style="font-size: 25px;">
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="7s" fill="freeze"></animateTransform>
+                                Quizz
+                        </text>
+                    </a>
+                    <a href="comentarios.html">
+                        <text x="35" y="190" style="font-size: 22px">
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="6s" fill="freeze"></animateTransform>
+                                Comentários
+                        </text>
+                    </a>
+                    <a href="../index.html">
+                        <text x="112" y="75" style="font-size: 35px">
+                            Home
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="5s" fill="freeze"></animateTransform>
+                        </text>
+                    </a>
+                    <a href="multimedia.html">
+                        <text x="150" y="30" style="font-size: 20px">
+                            Multimédia
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="6s" fill="freeze"></animateTransform>
+                        </text>
+                    </a>
+                    <a href="index.html">
+                        <text x="13" y="120" style="font-size: 25px">
+                            Introdução
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze"></animateTransform>
+                        </text>
+                    </a>       
+                </svg>
+            </section>
+        </main>
+        <aside>
+            <img src="images/estacao.jpg">
+            <img src="images/livraria.jpg">
+            <p>Visite a cidade do Porto. Não deixe passar esta oportunidade.</p>
+            <p>Espero que aprecie o site.</p>
+        </aside>
+        <footer>
+            <p>Tomás Maia,21904341,Lusófona,2ºano</p>
+        </footer>
+    </body>
+</html>
